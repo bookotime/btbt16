@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+
+		}
+		#all{
+			width: 960px;
+			height: 800px;
+			margin:auto;
+
+
+		}
+		#header{
+			width: 960px;
+			height: 100px;
+
+		}
+		#logo{
+			width: 385px;
+			height: 100px;
+			background-image: url(3.png); 
+			background-repeat: no-repeat;
+			background-position: center;
+			float: left;
+		}
+		#menu{
+			width: 575px;
+			height: 100px;
+			float: left;
+
+		}
+		#menu > ul > li {
+			float: left;
+			list-style:none;
+			padding: 20px 20px;
+			position: relative;
+		}
+		#menu ul li ul{
+			list-style:none;
+			display: none;
+			position: absolute;
+
+		}
+		#menu ul li ul li{
+			background: white;
+			width: 80px;
+			height: 30px;
+			border-bottom: 1px solid black;
+
+		}
+
+			
+		
+		#menu li:hover ul{
+			display: block;
+		}
+		a{
+			text-decoration: none;
+			font-weight: bold;
+			font-family: arial;
+		}
+		#content{
+			width: 960px;
+			height: 700px;
+			background-image: url(2.jpg);
+			z-index: -1;
+			
+		}
+		#left{
+			width: 385px;
+			height: 700px;
+			background-image: url(1.jpg);
+			background-size: 100%;
+			opacity: 0.9;
+			float: left;
+
+		}
+		#chu1{
+			font-style: italic;
+			font-family: Arial;
+			font-size: 50px;
+			line-height: 600px;
+			text-align: center;
+			height: 350px;
+			color: white;
+		}
+
+		#chu2{
+			font-family: Arial;
+			font-size: 20px;
+			line-height: 0px;
+			height: 20px;
+			text-align: center;
+			color: white;
+
+		}
+		#nut{
+			width: 180px;
+			height: 47px;
+			background: white;
+			margin:auto;
+			line-height: 47px;
+			text-align: center;
+			color:red;
+		}
+		#right{
+			float: right;
+			width: 575px;
+			height: 700px;
+			
+			
+
+		}
+	</style>
+</head>
+	
+<body>
+	<div id="all">
+		<div id="header">
+			<div id="logo"></div>
+			<div id="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Chef</a></li>
+					<li><a href="#">Features</a>
+						<ul>
+							<li><a href="">Feature 1</a></li>
+							<li><a href="">Feature 2</a></li>
+							<li><a href="">Feature 3</a></li>
+							<li><a href="">Feature 4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div id="left">
+				<div id="chu1">
+					Klassy Cafe
+				</div>
+				<div id="chu2">
+					THE BEST EXPERIENCE
+				</div>
+				<div id="nut">
+					Make A Reservation
+				</div>
+			</div>
+			<div id="right"></div>
+		</div>
+	</div>
+</body>
+</html>
